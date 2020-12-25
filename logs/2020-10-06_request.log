@@ -1,0 +1,2 @@
+[2020-10-06 16:24:40] [DEBUG] [request] : None POST => /api/user/login : 【ImmutableMultiDict([( user ,  admin ), ( password ,  snakejoy@123 )])】
+[2020-10-06 16:24:48] [DEBUG] [request] : None POST => /api/user/login : 【ImmutableMultiDict([( user ,  admin ), ( password ,  admin )])】

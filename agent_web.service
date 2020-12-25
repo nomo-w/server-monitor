@@ -1,0 +1,13 @@
+[Unit]
+Description=python web service(using gunicorn WSGI)
+After=syslog.target network.target
+
+[Service]
+User=root
+PIDFile=/tmp/gunicorn.pid
+WorkingDirectory=/root/
+ExecStart=/usr/local/bin/gunicorn -b 0.0.0.0:8808 agent_web:app
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
